@@ -1,0 +1,20 @@
+<mvc:View controllerName="home.kpmg.exercise2.controller.MainView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Panel headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
+							<content>
+								<Button id="helloDialogButton" text="{i18n>openDialogButtonText}" press=".onOpenDialog" class="sapUiSmallMarginEnd"/>
+								<Button text="{i18n>showHelloButtonText}" press=".onShowHello" class="myCustomButton"/>
+								<Input value="{/recipient/name}" valueLiveUpdate="true" width="60%"/>
+								<FormattedText htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
