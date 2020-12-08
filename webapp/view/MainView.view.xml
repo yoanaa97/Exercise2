@@ -13,8 +13,9 @@
 							</content>
 						</Panel>
 						<Panel headerText="{i18n>tablePanelTitle}" class="sapUiResponsiveMargin" width="auto">
-							<List headerText="Products" items="{ path: 'productsModel>/ProductCollection' }">
-								<StandardListItem title="{productsModel>Name}" description="{productsModel>Description}" counter="{productsModel>Quantity}"/>
+							<List headerText="Products" items="{ path: 'productsModel>/ProductCollection' }" mode="MultiSelect" includeItemInSelection="true">
+								<StandardListItem title="{productsModel>Name}" description="{productsModel>Description}" counter="{productsModel>Quantity}"
+									icon="{productsModel>ProductPicUrl}"/>
 							</List>
 						</Panel>
 					</content>
